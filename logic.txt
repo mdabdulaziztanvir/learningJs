@@ -1,0 +1,13 @@
+&& always include korte hoy
+1.temp jodi 10 er ceye beshi and 30 er ceye kom hoy tahole "weather is good"
+
+|| or a always exclude korte hoy
+2. temp jodi 10 er kom othoba 30 er beshi kom hoy tahole "weather is good"
+
+
+3.while lopp repeat kore jokhn koto kichu true hoy
+
+4.for loop
+for(let i = 0; i <= 3; i++){
+console.log(i)
+}
