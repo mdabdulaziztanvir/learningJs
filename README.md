@@ -6,6 +6,7 @@
 ### 2.input jodi number na hoy tahole userke alert korte hobe
 
 **Code Snippet:**
+```javascript
 if (isNaN(guess)) {
     window.alert(`please enter a valid Number`);
   } else {
@@ -14,6 +15,7 @@ if (isNaN(guess)) {
 
   
 ### 3.input er beshi ba kom number neya jabena
+
 
 if (isNaN(guess) || guess > maxNumber || guess < minNumber ) {
     window.alert(`please enter a valid Number`);
