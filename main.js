@@ -1,7 +1,9 @@
-for (let i = 1; i <= 20; i++) {
-  if (i == 13) {
-    break;
+for (let i = 0; i <= 10; i++) {
+  if (i == 5) {
+    continue;
+    // break;
   } else {
     console.log(i);
   }
+  console.log(i);
 }
