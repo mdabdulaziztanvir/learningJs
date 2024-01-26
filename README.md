@@ -21,12 +21,13 @@ if (isNaN(guess)) {
   
 ### 3.input er beshi ba kom number neya jabena
 
-
+```javascript
 if (isNaN(guess) || guess > maxNumber || guess < minNumber ) {
     window.alert(`please enter a valid Number`);
   } else {
     running = false;
   }
+```
 
 ### 4.input jodi guess er theke kom ba beshi hoye seta check kora shob error handle er por
 ```javascript
