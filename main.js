@@ -1,28 +1,26 @@
-function something(username, age) {
-  //theese are parameters
-  console.log("happy birthday to you");
-  console.log(`happy birthday to ${username}`);
-  console.log(`you are ${age} years old`);
+const tempValue = document.getElementById("tempValue");
+const celciusToFahren = document.getElementById("celciusToFahren");
+const fahrenToCelcius = document.getElementById("fahrenToCelcius");
+
+const result = document.getElementById("resutl");
+
+function convert() {
+  let temp;
+
+  temp = tempValue.value;
+
+  if (isNaN(temp)) {
+    result.textContent = `Not a valid type ${temp}`;
+  } else {
+    if (celciusToFahren.checked) {
+      temp = (temp * 9) / 5 + 32;
+      console.log(typeof(temp));
+      result.textContent = temp.toFixed(1) + " °F";
+    } else if (fahrenToCelcius.checked) {
+      temp = (temp - 32) * (5 / 9);
+      result.textContent = temp.toFixed(1) + " °C";
+    } else {
+      result.textContent = "Please select a conversion method";
+    }
+  }
 }
-something("tanvir", 24); //inside values are arguments
-something("spongebob", 34); //inside values are arguments
-something("someOne", 3); //inside values are arguments
-
-function add(a, b) {
-  return a + b;
-}
-
-let ans = add(2, 3);
-console.log(ans);
-
-function isEven(number) {
-  (number % 2 === 0) ?  console.log("Even Number") : console.log("Odd number");
-}
-
-isEven(24)
-
-function validEmail(email) {
-  return email.includes("@") ? true : false;
-}
-
-console.log(validEmail("leonmask.com"));

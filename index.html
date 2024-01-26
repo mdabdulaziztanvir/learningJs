@@ -8,6 +8,22 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <!-- Temperature conversion -->
+    <form>
+      <h1>Temperature Conversion</h1>
+      <hr />
+      <input type="text" name="" id="tempValue"  value="0" /> <br />
+
+      <input type="radio" name="tempCobversion" id="celciusToFahren" />
+      <label for="celciusToFahren">Celcius ➡️ Fahrenheit</label>
+      <br />
+      <input type="radio" name="tempCobversion" id="fahrenToCelcius" />
+      <label for="fahrenToCelcius">Fahrenheit ➡️ Celcius</label>
+      <br />
+      <button type="submit" id="btnSubmit" onclick="convert()">Convert</button>
+      <br />
+      <p id="resutl"></p>
+    </form>
 
     <script src="main.js"></script>
   </body>
